@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".MainFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline95"
+        app:layout_constraintTop_toTopOf="@+id/guideline94"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-55dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:id="@+id/specialChatBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_design"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_flag" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:backgroundTint="#FFFFFF"
+                        android:gravity="start|center_vertical"
+
+                        android:lines="1"
+                        android:text="@string/specific"
+                        android:textColor="#893EF9"
+                        app:autoSizeTextType="uniform" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/specific_desc"
+                    android:textColor="#2D2D2D"
+                    app:autoSizeTextType="uniform" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ic_drop" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:id="@+id/aroundmeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_design"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_globe" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:backgroundTint="#FFFFFF"
+                        android:gravity="start|center_vertical"
+
+                        android:lines="1"
+                        android:text="@string/Around_Me_Users"
+                        android:textColor="#893EF9"
+                        app:autoSizeTextType="uniform" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/around_desc"
+                    android:textColor="#2D2D2D"
+                    app:autoSizeTextType="uniform" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ic_drop" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:id="@+id/getRewardsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_design"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_lightning" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:backgroundTint="#FFFFFF"
+                        android:gravity="start|center_vertical"
+
+                        android:lines="1"
+                        android:text="@string/Get_Free_Points"
+                        android:textColor="#893EF9"
+                        app:autoSizeTextType="uniform" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/points_desc"
+                    android:textColor="#2D2D2D"
+                    app:autoSizeTextType="uniform" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ic_drop" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:id="@+id/hideMeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_design"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_location" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:backgroundTint="#FFFFFF"
+                        android:gravity="start|center_vertical"
+                        android:lines="1"
+                        android:text="@string/hide_me"
+                        android:textColor="#893EF9"
+                        app:autoSizeTextType="uniform" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/hide_me_desc"
+                    android:textColor="#2D2D2D"
+                    app:autoSizeTextType="uniform" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ic_drop" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-4861675071646635/3075005030"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

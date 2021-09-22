@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileMessageIv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="12dp"
+        app:civ_circle_background_color="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/firstLetterMessageTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#893EF9"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/profileMessageIv"
+        app:layout_constraintEnd_toEndOf="@+id/profileMessageIv"
+        app:layout_constraintStart_toStartOf="@+id/profileMessageIv"
+        app:layout_constraintTop_toTopOf="@+id/profileMessageIv" />
+
+
+    <TextView
+        android:id="@+id/usernameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/profileMessageIv"
+        android:textColor="#262626"
+        app:layout_constraintTop_toTopOf="@+id/profileMessageIv" />
+
+    <TextView
+        android:id="@+id/genderTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="#A8A8A8"
+        android:textSize="17sp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profileMessageIv" />
+
+    <TextView
+        android:id="@+id/countryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A8A8A8"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/usernameTv"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTv" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="#17707070"
+        app:layout_constraintBottom_toBottomOf="@+id/profileMessageIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profileMessageIv"
+        app:layout_constraintTop_toBottomOf="@+id/countryTv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

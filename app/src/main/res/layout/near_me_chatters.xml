@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileMessageIv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="@+id/firstLetterMessageTv"
+        app:layout_constraintStart_toStartOf="@+id/firstLetterMessageTv" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="24dp"
+        android:layout_height="53dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/profileMessageIv"
+        app:layout_constraintEnd_toStartOf="@+id/guideline114"
+        app:layout_constraintStart_toStartOf="@+id/guideline113"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/firstLetterMessageTv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#893EF9"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline114"
+        app:layout_constraintStart_toStartOf="@+id/guideline113"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usernameTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="start|center_vertical"
+        android:lines="1"
+        android:textAlignment="viewStart"
+        android:textColor="#262626"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guideline118"
+        app:layout_constraintEnd_toStartOf="@+id/guideline116"
+        app:layout_constraintStart_toStartOf="@+id/guideline115"
+        app:layout_constraintTop_toTopOf="@+id/guideline165" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/countryTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:gravity="center_vertical|start"
+        android:lines="1"
+        android:textAlignment="viewStart"
+        android:textColor="#A8A8A8"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guideline119"
+        app:layout_constraintEnd_toStartOf="@+id/guideline117"
+        app:layout_constraintStart_toStartOf="@+id/guideline115"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTv" />
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/relativeLayout2"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline4"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline3"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/linearLayout2">-->
+
+    <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--            android:id="@+id/profileMessageIv"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            app:civ_circle_background_color="@color/white"-->
+    <!--            app:civ_border_color="#000000"-->
+    <!--            app:civ_border_width="1dp" />-->
+    <!--            <ProgressBar-->
+    <!--                android:id="@+id/progressBar"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:visibility="gone"-->
+    <!--                android:layout_height="match_parent"/>-->
+
+    <!--        <androidx.appcompat.widget.AppCompatTextView-->
+    <!--            android:id="@+id/firstLetterMessageTv"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textColor="#548EE4"-->
+    <!--            app:autoSizeTextType="uniform" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.02" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.19" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline25"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.21" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline26"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.98" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout2"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/view2"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline26"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline25"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/linearLayout"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <androidx.appcompat.widget.AppCompatTextView-->
+    <!--                android:id="@+id/usernameMessageTv"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:lines="1"-->
+    <!--                android:textAlignment="viewStart"-->
+    <!--                android:textColor="#000000"-->
+    <!--                app:autoSizeMaxTextSize="35sp"-->
+    <!--                app:autoSizeMinTextSize="12sp"-->
+    <!--                app:autoSizeStepGranularity="1sp"-->
+    <!--                app:autoSizeTextType="uniform" />-->
+
+    <!--            <androidx.appcompat.widget.AppCompatTextView-->
+    <!--                android:id="@+id/timeMessageTv"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:gravity="end"-->
+    <!--                android:lines="1"-->
+    <!--                android:textColor="#929292"-->
+    <!--                app:autoSizeMaxTextSize="30sp"-->
+    <!--                app:autoSizeMinTextSize="12sp"-->
+    <!--                app:autoSizeStepGranularity="1sp"-->
+    <!--                app:autoSizeTextType="uniform" />-->
+    <!--        </LinearLayout>-->
+
+    <!--        <androidx.appcompat.widget.AppCompatTextView-->
+    <!--            android:id="@+id/contentMessageTv"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="0.9"-->
+    <!--            android:lines="1"-->
+    <!--            android:gravity="center_vertical|start"-->
+    <!--            android:textAlignment="viewStart"-->
+    <!--            android:textColor="#929292"-->
+    <!--            app:autoSizeMaxTextSize="30sp"-->
+    <!--            app:autoSizeMinTextSize="12sp"-->
+    <!--            app:autoSizeStepGranularity="1sp"-->
+    <!--            app:autoSizeTextType="uniform" />-->
+
+    <!--&lt;!&ndash;        <androidx.appcompat.widget.AppCompatTextView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/areaMessageTv"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textColor="#929292"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:lines="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textAlignment="viewStart"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:autoSizeMaxTextSize="30sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:autoSizeMinTextSize="12sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:autoSizeStepGranularity="1sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:autoSizeTextType="uniform" />&ndash;&gt;-->
+
+
+    <!--    </LinearLayout>-->
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/genderTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="#A8A8A8"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guideline118"
+        app:layout_constraintEnd_toStartOf="@+id/guideline117"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline116"
+        app:layout_constraintTop_toTopOf="@+id/usernameTv" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="1dp"
+        android:background="#17707070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profileMessageIv"
+        app:layout_constraintTop_toBottomOf="@+id/countryTv" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.185" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline116"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline117"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline115"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline118"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline165"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline119"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
